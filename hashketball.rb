@@ -142,8 +142,12 @@ def team_names
 
 end
 
-def player_numbers(player)
-  all_players[player][:number]
+def player_numbers(team)
+  set = game_hash.select do | key, values | 
+    values[:team_name] == team
+  end
+  set
+  
 end
 
 def player_stats(player)
