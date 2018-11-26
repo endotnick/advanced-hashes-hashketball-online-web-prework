@@ -142,8 +142,8 @@ def team_names
 
 end
 
-def player_numbers
-
+def player_numbers(player)
+  all_players[player][:number]
 end
 
 def player_stats(player)
