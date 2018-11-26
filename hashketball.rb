@@ -146,8 +146,8 @@ def player_numbers
 
 end
 
-def player_stats
-
+def player_stats(player)
+  all_players[player]
 end
 
 def big_shoe_rebounds
