@@ -152,7 +152,7 @@ def team_names
 end
 
 def player_numbers(team)
-  puts get_team(team)
+  puts get_team(team)[:players]
 end
 
 def player_stats(player)
