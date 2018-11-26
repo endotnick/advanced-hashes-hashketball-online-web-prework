@@ -131,7 +131,7 @@ def num_points_scored(player)
 end
 
 def shoe_size(player)
-  all_players[player][:shoe_size]
+  all_players[player][:shoe]
 end
 
 def team_colors
