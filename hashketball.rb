@@ -122,7 +122,7 @@ def all_players
     data[:players].each do |player, data|
       puts player
       puts data
-      players << player
+      players[player] = data
     end
   end
   players
