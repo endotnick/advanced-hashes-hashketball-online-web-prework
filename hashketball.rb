@@ -152,7 +152,7 @@ def team_names
 end
 
 def player_numbers(team)
-  puts get_team(team)[1]
+  puts get_team(team)
 end
 
 def player_stats(player)
