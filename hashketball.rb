@@ -153,6 +153,7 @@ end
 
 def player_numbers(team)
   numbers = get_team(team)[:players].collect do |player, stats|
+    puts stats[:number]
     stats[:number]
   end
   puts numbers
