@@ -123,7 +123,7 @@ def all_players
 end
 
 def num_points_scored(player)
-  puts players
+  puts all_players
 
 end
 
