@@ -148,7 +148,7 @@ def team_colors(team)
 end
 
 def team_names
-  
+
 end
 
 def player_numbers(team)
@@ -162,8 +162,8 @@ end
 def big_shoe_rebounds
   big_shoe = 0
   name = ''
-  players = all_players.each do |player, data|    
-    if big_shoe = data[:shoe] > big_shoe 
+  players = all_players.each do |player, data|
+    if data[:shoe] > big_shoe
       big_shoe = data[:shoe]
       name = player
     end
