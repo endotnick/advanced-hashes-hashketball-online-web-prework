@@ -152,11 +152,10 @@ def team_names
 end
 
 def player_numbers(team)
-  numbers = get_team(team)[:players].collect do |player, stats|
-    puts stats[:number]
+  numbers = get_team(team)[:players].collect do |player, stats|  
     stats[:number]
   end
-  puts "array: #{numbers.sort}"
+  numbers.sort
 end
 
 def player_stats(player)
