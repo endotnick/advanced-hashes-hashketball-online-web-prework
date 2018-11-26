@@ -114,8 +114,16 @@ def game_hash
     }
   }
 end
+def all_players
+  players = {}
+  game_hash.each do |team|
+    team[:players].each { |player| players << player}
+  end
+  players
+end
 
-def num_points_scored
+def num_points_scored(player)
+  puts players
 
 end
 
