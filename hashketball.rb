@@ -114,10 +114,15 @@ def game_hash
     }
   }
 end
+
 def all_players
   players = {}
   game_hash.each do |team|
-    team[:players].each { |player| players << player}
+    team[:players].each do |player, data|
+      puts player
+      puts data
+      players << player
+    end
   end
   players
 end
