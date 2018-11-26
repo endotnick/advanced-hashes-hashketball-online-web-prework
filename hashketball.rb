@@ -126,9 +126,8 @@ def all_players
 end
 
 def num_points_scored(player)
-  puts "#{player} | #{all_players[player]}"
+  #puts "#{player} | #{all_players[player]}"
   all_players[player][:points]
-
 end
 
 def shoe_size
