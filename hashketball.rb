@@ -126,6 +126,7 @@ def all_players
 end
 
 def num_points_scored(player)
+  puts all_players
   all_players[player][:points]
 
 end
