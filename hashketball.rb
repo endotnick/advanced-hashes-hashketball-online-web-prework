@@ -156,7 +156,7 @@ def player_numbers(team)
     puts stats[:number]
     stats[:number]
   end
-  puts "array: #{numbers}"
+  puts "array: #{numbers.sort}"
 end
 
 def player_stats(player)
