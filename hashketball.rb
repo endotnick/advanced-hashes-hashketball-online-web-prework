@@ -119,8 +119,6 @@ def all_players
   players = {}
   game_hash.each do |team, data|
     data[:players].each do |player, data|
-      puts player
-      puts data
       players[player] = data
     end
   end
