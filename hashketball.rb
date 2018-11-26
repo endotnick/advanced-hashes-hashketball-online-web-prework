@@ -143,11 +143,14 @@ def team_names
 end
 
 def player_numbers(team)
-  set = game_hash.select do | key, values | 
+  set = game_hash.select do | key, values |
     values[:team_name] == team
   end
-  set
-  
+  numbers = set[:players].collect do | data | 
+    data.number
+  end
+  puts numbers
+
 end
 
 def player_stats(player)
