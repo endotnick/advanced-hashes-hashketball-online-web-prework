@@ -128,7 +128,7 @@ end
 def get_team(name)
   game_hash.each do |team, data|
     if data[:team_name] == name
-      return data.flatten
+      return data
     end
   end
   nil
