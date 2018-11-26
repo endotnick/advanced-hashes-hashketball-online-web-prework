@@ -125,6 +125,15 @@ def all_players
   players
 end
 
+def get_team(name)
+  game_hash.each do |team, data|
+    if data[:team_name] == name
+      return team
+    end
+  end
+  nil
+end
+
 def num_points_scored(player)
   # puts "#{player} | #{all_players[player]}"
   all_players[player][:points]
